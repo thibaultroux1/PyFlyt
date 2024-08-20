@@ -110,7 +110,7 @@ class QuadXGatesEnv(QuadXBaseEnv):
         self.goal_reach_distance = goal_reach_distance
 
         file_dir = os.path.dirname(os.path.realpath(__file__))
-        self.gate_obj_dir = os.path.join(file_dir, "../models/race_gate.urdf")
+        self.gate_obj_dir = os.path.join(file_dir, "../../models/race_gate.urdf")
         self.camera_resolution = camera_resolution
         self.num_targets = num_targets
 

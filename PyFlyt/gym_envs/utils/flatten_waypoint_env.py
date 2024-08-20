@@ -21,7 +21,7 @@ class FlattenWaypointEnv(ObservationWrapper):
 
         """
         super().__init__(env=env)
-        if not hasattr(env, "waypoints") and not isinstance(
+        if not hasattr(env, "waypoints") or not isinstance(
             env.unwrapped.waypoints,  # type: ignore[reportAttributeAccess]
             WaypointHandler,
         ):
